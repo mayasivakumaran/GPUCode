@@ -1,0 +1,11 @@
+#!/bin/bash
+echo -n "Deleting Stationary_BC.exe..."
+/bin/rm Stationary_BC.exe
+echo "done"
+echo -n "Compiling Stationary_BC.exe..."
+ifort -o Stationary_BC.exe Stationary_BC.f90
+echo "done"
+read -p "Press enter to run Stationary_BC.exe > "
+./Stationary_BC.exe
+
+
